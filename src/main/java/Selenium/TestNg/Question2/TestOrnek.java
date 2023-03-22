@@ -1,4 +1,4 @@
-package TestNgImplements.Question2;
+package Selenium.TestNg.Question2;
 
 import org.testng.annotations.Test;
 

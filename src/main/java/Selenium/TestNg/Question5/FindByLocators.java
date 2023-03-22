@@ -1,4 +1,4 @@
-package TestNgImplements.Question5;
+package Selenium.TestNg.Question5;
 
 import Selenium.Browsers;
 import Selenium.Driver;

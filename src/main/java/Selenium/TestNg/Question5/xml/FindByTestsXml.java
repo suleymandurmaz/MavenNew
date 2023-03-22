@@ -1,7 +1,7 @@
-package TestNgImplements.Question5.xml;
+package Selenium.TestNg.Question5.xml;
 
 import Selenium.Driver;
-import TestNgImplements.Question5.FindByLocators;
+import Selenium.TestNg.Question5.FindByLocators;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;

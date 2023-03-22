@@ -1,4 +1,4 @@
-package TestNgImplements.Question3;
+package Selenium.TestNg.Question3;
 
 import Selenium.Driver;
 import org.apache.commons.io.FileUtils;

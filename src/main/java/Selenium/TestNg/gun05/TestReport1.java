@@ -1,4 +1,4 @@
-package TestNgImplements.gun05;
+package Selenium.TestNg.gun05;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
