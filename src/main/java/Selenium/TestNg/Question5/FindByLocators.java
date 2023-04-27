@@ -24,7 +24,7 @@ public class FindByLocators {
      String url="https://opencart.abstracta.us/";
 
      public FindByLocators() {
-          driver= Driver.getDriver(Browsers.EDGE);
+          //driver= Driver.getDriver(Browsers.valueOf());
           PageFactory.initElements(driver,this);
           driver.manage().window().maximize();
 

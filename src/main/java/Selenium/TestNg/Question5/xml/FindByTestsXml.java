@@ -1,5 +1,6 @@
 package Selenium.TestNg.Question5.xml;
 
+import Selenium.Browsers;
 import Selenium.Driver;
 import Selenium.TestNg.Question5.FindByLocators;
 import org.openqa.selenium.WebDriver;
@@ -24,18 +25,14 @@ public class FindByTestsXml {
         locators.password.sendKeys("deneme");
         locators.submitLogin.click();
         Assert.assertEquals(locators.newsLetter.getText(), "Newsletter");
-
-    }
-
-    @AfterTest
-    public void afterTest() {
         Driver.quitDriver();
 
     }
 
+
     @Test
     public void test() {
-        driver = Driver.getDriver();
+        driver = Driver.getDriver(Browsers.EDGE);
         FindByLocators findByLocators = PageFactory.initElements(driver, FindByLocators.class);
 
         findByLocators.goToUrl();
@@ -45,6 +42,7 @@ public class FindByTestsXml {
         findByLocators.password.sendKeys("deneme");
         findByLocators.submitLogin.click();
         Assert.assertEquals(findByLocators.newsLetter.getText(), "Newsletter");
+        Driver.quitDriver();
 
 
     }

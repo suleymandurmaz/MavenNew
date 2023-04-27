@@ -1,5 +1,6 @@
 package Selenium.TestNg.Question3;
 
+import Selenium.Browsers;
 import Selenium.Driver;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
@@ -21,7 +22,7 @@ public class ProgressBarBase extends ProgressBarLocators {
 
     @BeforeSuite
     public void beforeSuit() {
-        driver = Driver.getDriver();
+        driver = Driver.getDriver(Browsers.EDGE);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         driver.manage().window().maximize();
     }

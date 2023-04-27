@@ -1,5 +1,6 @@
 package Selenium.TestNg.Question5;
 
+import Selenium.Browsers;
 import Selenium.Driver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,7 +17,7 @@ public class FindByBase {
 
 
     {
-        driver= Driver.getDriver();
+        driver= Driver.getDriver(Browsers.EDGE);
         //wait=new WebDriverWait(driver, Duration.ofSeconds(10));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().window().maximize();

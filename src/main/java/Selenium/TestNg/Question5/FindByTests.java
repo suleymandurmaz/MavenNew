@@ -34,7 +34,7 @@ public class FindByTests {
     }
     @Test
     public void test(){
-        driver=Driver.getDriver();
+
         FindByLocators findByLocators=PageFactory.initElements(driver,FindByLocators.class);
 
         findByLocators.goToUrl();
@@ -75,7 +75,7 @@ public class FindByTests {
         }
         @Test
         public void test(){
-            driver=Driver.getDriver();
+
             FindByLocators findByLocators=PageFactory.initElements(driver,FindByLocators.class);
 
             findByLocators.goToUrl();
